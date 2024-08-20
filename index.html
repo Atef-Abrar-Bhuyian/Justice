@@ -38,17 +38,68 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-color': '#B68C5A',
+                        'dark1': '#111111',
+                        'dark2': '#414040',
+                        'dark3': '#707070',
+                        'dark4': '#A0A0A0',
+                        'dark5': '#CFCFCF',
+                        'dark6': '#E7E7E7',
+                        'dark7': '#F3F3F3',
+                        'primary-dark-color': '#8C5008',
                     }
                 }
             }
         }
     </script>
+
+    <!-- Font-awesome CDN -->
+    <script src="https://kit.fontawesome.com/49c2b39c0f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- header -->
-    <header>
-
+    <header class="container mx-auto">
+        <nav class="mt-2">
+            <div class="navbar bg-base-100 poppins-font">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-primary-color text-dark2 font-semibold rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Service</a> </li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl"><img src="images/logo2.png" alt="Logo"></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-dark3">
+                        <li class="bg-primary-color text-white rounded-lg"><a>Home</a></li>
+                        <li class="hover:bg-primary-color hover:text-white hover:rounded-lg"><a>Service <i
+                                    class="fa-solid fa-greater-than"></i></a> </li>
+                        <li class="hover:bg-primary-color hover:text-white hover:rounded-lg"><a>Cases <i
+                                    class="fa-solid fa-greater-than"></i></a></li>
+                        <li class="hover:bg-primary-color hover:text-white hover:rounded-lg"><a>Blog <i
+                                    class="fa-solid fa-greater-than"></i></a></li>
+                        <li class="hover:bg-primary-color hover:text-white hover:rounded-lg"><a>Contact Us <i
+                                    class="fa-solid fa-greater-than"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-primary-color text-white hover:bg-primary-dark-color">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- main -->
